@@ -1,5 +1,5 @@
 describe('verificação da página inicial do cypress', () => {
-  it('teste cadastro e login', () => {
+  it('preencher os campos corretamente para realizar cadastro', () => {
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
     cy.get('[data-test="register-button"]').click({ force: true });
     cy.get('input[name="nome"]').type('Nome teste');
