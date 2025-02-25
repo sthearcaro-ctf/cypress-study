@@ -14,3 +14,17 @@ Resultados esperados:
 
 Regra de negócio:
 E-mail e senha são campos obrigatórios para o cadastro.
+
+--------------------------------------------------------
+
+Cenário: Falha na tentativa de cadastro
+
+Passos: 
+1. O usuário acessa a página de cadastro.
+2. O usuário deixa os campos obrigatórios (nome, email, senha e confirmação de senha) em branco.
+3. O usuário clica no botão "Cadastrar".
+
+Resultados esperados:
+
+O sistema valida os campos obrigatórios em branco.
+O sistema exibe mensagens de erro indicando que os campos obrigatórios devem ser preenchidos.
