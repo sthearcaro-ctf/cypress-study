@@ -13,8 +13,9 @@ module.exports = defineConfig({
       reportDir: 'cypress/results', // caminho da pasta
       overwrite: false, // se ele vai ou não sobrescrever
       html: true, // gera arquivo html
-      json: false, // gera arquivo em json
-      timestamp: "mmddyyyy_HHMMss" // tipo de data (mes/dia/ano_h/min/seg)
+      json: true, // gera arquivo em json
+      timestamp: "mmddyyyy_HHMMss", // tipo de data (mes/dia/ano_h/min/seg)
+      reportFilename: "relatorio_teste"
     }
   },
 });

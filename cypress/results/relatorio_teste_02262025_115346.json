@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-26T14:53:41.881Z",
+    "end": "2025-02-26T14:53:46.512Z",
+    "duration": 4631,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a7b96b59-1fda-4561-8063-e03a216561b5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\exercicios2.cy.js",
+      "file": "cypress\\e2e\\exercicios2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a66a07a3-0ade-48ed-a7b2-525fef003de2",
+          "title": "Testes na página inicial pelo cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verificação se o título é igual a \"AdoPet\"",
+              "fullTitle": "Testes na página inicial pelo cypress verificação se o título é igual a \"AdoPet\"",
+              "timedOut": null,
+              "duration": 601,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.title().should('eq', 'AdoPet');",
+              "err": {},
+              "uuid": "b74c4647-a374-4a88-bce0-b2ab1d9e5601",
+              "parentUUID": "a66a07a3-0ade-48ed-a7b2-525fef003de2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verificação do texto \"Quem ama adota!\"",
+              "fullTitle": "Testes na página inicial pelo cypress verificação do texto \"Quem ama adota!\"",
+              "timedOut": null,
+              "duration": 512,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Quem ama adota!');",
+              "err": {},
+              "uuid": "161eb9f3-c6ea-42b3-bb25-b10e15e3d05c",
+              "parentUUID": "a66a07a3-0ade-48ed-a7b2-525fef003de2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verificação de texto presente no html",
+              "fullTitle": "Testes na página inicial pelo cypress verificação de texto presente no html",
+              "timedOut": null,
+              "duration": 153,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!');",
+              "err": {},
+              "uuid": "efb0aeb8-51d1-4b31-8555-172f6fc68281",
+              "parentUUID": "a66a07a3-0ade-48ed-a7b2-525fef003de2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "teste de login seguindo outro fluxo",
+              "fullTitle": "Testes na página inicial pelo cypress teste de login seguindo outro fluxo",
+              "timedOut": null,
+              "duration": 1330,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.header__message').click();\ncy.get('[data-test=\"input-loginEmail\"]').type('teste_cyp@gmail.com');\ncy.get('[data-test=\"input-loginPassword\"]').type('Senha123');\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "d207d385-3192-4c39-a4a2-d3f3757f8997",
+              "parentUUID": "a66a07a3-0ade-48ed-a7b2-525fef003de2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b74c4647-a374-4a88-bce0-b2ab1d9e5601",
+            "161eb9f3-c6ea-42b3-bb25-b10e15e3d05c",
+            "efb0aeb8-51d1-4b31-8555-172f6fc68281",
+            "d207d385-3192-4c39-a4a2-d3f3757f8997"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2596,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "relatorio_teste",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "reportFilename": "relatorio_teste"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
