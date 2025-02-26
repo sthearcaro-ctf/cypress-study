@@ -1,3 +1,17 @@
+Cypress.Commands.add('login', (email, password) => {
+    cy.get('input[name="email"]').clear().type(email);
+    cy.get('input[name="password"]').clear().type(password);
+    cy.get('[data-test="submit-button"]').click();
+})
+
+Cypress.Commands.add('cadastro', (nome, email, password) => {
+    cy.get('input[name="nome"]').clear().type(nome);
+    cy.get('input[name="email"]').clear().type(email);
+    cy.get('input[name="password"]').clear().type(password);
+    cy.get('input[name="confirm_password"]').clear().type(password);
+    cy.get('[data-test="submit-button"]').click({ force: true });
+})
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite

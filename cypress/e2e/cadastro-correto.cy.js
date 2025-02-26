@@ -6,11 +6,7 @@ describe('verificação da página inicial do cypress', () => {
   })
 
   it('preencher os campos corretamente para realizar cadastro', () => {
-    cy.get('input[name="nome"]').type('Nome teste');
-    cy.get('input[name="email"]').type('teste_cyp3@gmail.com');
-    cy.get('input[name="password"]').type('Senha123');
-    cy.get('input[name="confirm_password"]').type('Senha123');
-    cy.get('[data-test="submit-button"]').click({ force: true });
+    cy.cadastro('Nome teste', 'teste_cyp4@gmail.com', 'Senha123');
 
   })
 })
