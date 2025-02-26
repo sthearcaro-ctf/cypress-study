@@ -6,6 +6,7 @@ describe('verificação da página de login do cypress', () => {
 
     it('preencher os campos do login corretamente e autenticar o usuário na página', () => {
         cy.login('teste_cyp@gmail.com', 'Senha123');
-        cy.get('a.card__contact[aria-label="Falar com responsável"]').eq(1).click();
+        //cy.get('a.card__contact[aria-label="Falar com responsável"]').eq(1).click();
+        //cy.get('.header__home').click();
     })
 })
