@@ -1,0 +1,202 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-26T18:02:32.826Z",
+    "end": "2025-02-26T18:02:48.436Z",
+    "duration": 15610,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a47b8b45-549b-4997-ae0c-a06912ed29a5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastro-massa.cy.js",
+      "file": "cypress\\e2e\\cadastro-massa.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ae459a35-bfcc-47b9-bb55-eeaa2c0e963d",
+          "title": "página de cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "preencher os campos corretamente para realizar cadastro",
+              "fullTitle": "página de cadastro preencher os campos corretamente para realizar cadastro",
+              "timedOut": null,
+              "duration": 2933,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuario.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuario.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "036b8819-3f86-4847-8339-f74d0537efd3",
+              "parentUUID": "ae459a35-bfcc-47b9-bb55-eeaa2c0e963d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "preencher os campos corretamente para realizar cadastro",
+              "fullTitle": "página de cadastro preencher os campos corretamente para realizar cadastro",
+              "timedOut": null,
+              "duration": 2113,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuario.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuario.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "3d3c507e-1eab-4e7c-88a5-38aef95d3941",
+              "parentUUID": "ae459a35-bfcc-47b9-bb55-eeaa2c0e963d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "preencher os campos corretamente para realizar cadastro",
+              "fullTitle": "página de cadastro preencher os campos corretamente para realizar cadastro",
+              "timedOut": null,
+              "duration": 2481,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuario.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuario.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "e229cdd2-34d5-4faa-b09a-098c4df2d629",
+              "parentUUID": "ae459a35-bfcc-47b9-bb55-eeaa2c0e963d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "preencher os campos corretamente para realizar cadastro",
+              "fullTitle": "página de cadastro preencher os campos corretamente para realizar cadastro",
+              "timedOut": null,
+              "duration": 2184,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuario.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuario.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "d14d226c-f600-40c7-9f48-91c124697b3b",
+              "parentUUID": "ae459a35-bfcc-47b9-bb55-eeaa2c0e963d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "preencher os campos corretamente para realizar cadastro",
+              "fullTitle": "página de cadastro preencher os campos corretamente para realizar cadastro",
+              "timedOut": null,
+              "duration": 2274,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuario.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuario.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "0a1c25d2-3d93-491e-b0b9-d39ca1a39d57",
+              "parentUUID": "ae459a35-bfcc-47b9-bb55-eeaa2c0e963d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "preencher os campos corretamente para realizar cadastro",
+              "fullTitle": "página de cadastro preencher os campos corretamente para realizar cadastro",
+              "timedOut": null,
+              "duration": 2046,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"input-name\"]').clear().type(usuario.name);\ncy.get('[data-test=\"input-email\"]').clear().type(usuario.email);\ncy.get('[data-test=\"input-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"input-confirm-password\"]').clear().type(usuario.password);\ncy.get('[data-test=\"submit-button\"]').click();",
+              "err": {},
+              "uuid": "f1037843-f19b-4003-8e45-9c7d53c9eab6",
+              "parentUUID": "ae459a35-bfcc-47b9-bb55-eeaa2c0e963d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "036b8819-3f86-4847-8339-f74d0537efd3",
+            "3d3c507e-1eab-4e7c-88a5-38aef95d3941",
+            "e229cdd2-34d5-4faa-b09a-098c4df2d629",
+            "d14d226c-f600-40c7-9f48-91c124697b3b",
+            "0a1c25d2-3d93-491e-b0b9-d39ca1a39d57",
+            "f1037843-f19b-4003-8e45-9c7d53c9eab6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14031,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "relatorio_teste",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "reportFilename": "relatorio_teste"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-26T18:03:11.333Z",
+    "end": "2025-02-26T18:03:15.953Z",
+    "duration": 4620,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2f7be350-bbc7-4df3-975c-70f087a0a412",
+      "title": "",
+      "fullFile": "cypress\\e2e\\verificar-imagens.cy.js",
+      "file": "cypress\\e2e\\verificar-imagens.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e6bf1753-c7bb-45f2-816e-23738e1d6e48",
+          "title": "verificação de imagens no cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verificar se as imagens aparecem corretamente na pagina",
+              "fullTitle": "verificação de imagens no cypress verificar se as imagens aparecem corretamente na pagina",
+              "timedOut": null,
+              "duration": 3215,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.cards').should('be.visible');",
+              "err": {},
+              "uuid": "42355004-b3ee-4b48-8e02-7630651e0135",
+              "parentUUID": "e6bf1753-c7bb-45f2-816e-23738e1d6e48",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "42355004-b3ee-4b48-8e02-7630651e0135"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3215,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "relatorio_teste",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "reportFilename": "relatorio_teste"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

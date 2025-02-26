@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-26T18:03:03.810Z",
+    "end": "2025-02-26T18:03:08.665Z",
+    "duration": 4855,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "889634b8-1bf4-4ee0-a037-99f85e270353",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login-incorreto.cy.js",
+      "file": "cypress\\e2e\\login-incorreto.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "70056f4a-3076-4bf6-97bf-30fa61ac5bf5",
+          "title": "verificação da página de login do cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verifica mensagem de falha no login",
+              "fullTitle": "verificação da página de login do cypress verifica mensagem de falha no login",
+              "timedOut": null,
+              "duration": 932,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[data-test=\"submit-button\"]').click();\ncy.contains('É necessário informar um endereço de email').should('be.visible');\ncy.contains('Insira sua senha').should('be.visible');",
+              "err": {},
+              "uuid": "2f5bdd72-4fc7-4f32-a60d-22c31639f24d",
+              "parentUUID": "70056f4a-3076-4bf6-97bf-30fa61ac5bf5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "falhar mesmo com os campos preenchidos corretamente",
+              "fullTitle": "verificação da página de login do cypress falhar mesmo com os campos preenchidos corretamente",
+              "timedOut": null,
+              "duration": 1387,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('teste_ctf3@gmail.com', 'Errada123');\ncy.wait('@stubPost');\ncy.contains('Falha no login. Consulte suas credenciais.').should('be.visible');",
+              "err": {},
+              "uuid": "f347f10e-1125-4502-a19e-f69c0024d9f9",
+              "parentUUID": "70056f4a-3076-4bf6-97bf-30fa61ac5bf5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "preencher os campos do login incorretamente e exibir mensagem ao usuário",
+              "fullTitle": "verificação da página de login do cypress preencher os campos do login incorretamente e exibir mensagem ao usuário",
+              "timedOut": null,
+              "duration": 1101,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login('@errado.com', 'senha-errada');\ncy.contains('Por favor, verifique o email digitado').should('be.visible');\ncy.contains('A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres').should('be.visible');",
+              "err": {},
+              "uuid": "27c70c3e-c92f-447e-8d4e-98a82b97c012",
+              "parentUUID": "70056f4a-3076-4bf6-97bf-30fa61ac5bf5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2f5bdd72-4fc7-4f32-a60d-22c31639f24d",
+            "f347f10e-1125-4502-a19e-f69c0024d9f9",
+            "27c70c3e-c92f-447e-8d4e-98a82b97c012"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3420,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "relatorio_teste",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "reportFilename": "relatorio_teste"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
