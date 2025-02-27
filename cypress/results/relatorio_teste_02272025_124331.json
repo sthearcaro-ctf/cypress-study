@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-27T15:43:30.023Z",
+    "end": "2025-02-27T15:43:31.295Z",
+    "duration": 1272,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "582dadb5-8465-4d80-8394-8a749e323fce",
+      "title": "",
+      "fullFile": "cypress\\e2e\\api-mensagens.cy.js",
+      "file": "cypress\\e2e\\api-mensagens.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5979c07f-4f5e-4cb7-8844-3bca2d823ca0",
+          "title": "Api Adopet",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Mensagens da API",
+              "fullTitle": "Api Adopet Mensagens da API",
+              "timedOut": null,
+              "duration": 1234,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  // pois iremos solicitar dados da API\n  url: 'https://adopet-api-i8qu.onrender.com/mensagem/656d4c84-e181-4360-afa3-fcf7e2832ca1',\n  headers: Cypress.env()\n}).then(response => {\n  expect(response.status).to.equal(200); // Verifica se o status é 200 (OK) - sucesso da API\n  expect(response.body).is.not.empty; // para que o body não seja vazio\n  expect(response.body).to.have.property('msg'); // Verifica se a resposta tem uma propriedade 'msg'\n});",
+              "err": {},
+              "uuid": "c6f1afa0-4b30-481f-b1d7-c7b9c6068ae2",
+              "parentUUID": "5979c07f-4f5e-4cb7-8844-3bca2d823ca0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c6f1afa0-4b30-481f-b1d7-c7b9c6068ae2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1234,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "relatorio_teste",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "reportFilename": "relatorio_teste"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
